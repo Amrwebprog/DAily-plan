@@ -36,9 +36,14 @@
     </style>
 </head>
 <body>
+    <!-- زر التحويل بين اللغة العربية والإنجليزية -->
+    <div class="container mt-3 text-end">
+        <button id="lang-toggle-btn" class="btn btn-primary">Arabic</button>
+    </div>
+
     <div class="container mt-5">
       <div class="school-name d-flex justify-content-center align-items-center text-center">
-        <h2>El Mostakbal Modern School</h2>
+        <h2 id="school-name">El Mostakbal Modern School</h2>
       </div>
         <div class="image-container">
             <img src="WhatsApp_Image_2024-09-19_at_07.54.16_9ef7e240-removebg-preview.png" alt="Transparent Image" class="centered-image">
@@ -47,9 +52,9 @@
             <div class="col-12 col-md-8">
                 <!-- Grade Selection -->
                 <div class="mb-3">
-                    <label for="classRoom" class="form-label">Grade</label>
+                    <label for="classRoom" class="form-label" id="grade-label">Grade</label>
                     <select class="form-select" id="classRoom" required>
-                        <option selected disabled>Select ClassRoom</option>
+                        <option selected disabled id="select-class">Select ClassRoom</option>
                         <optgroup label="KG 1">
                           <option value="Moana">Moana</option>
                           <option value="Trolls">Trolls</option>
@@ -98,7 +103,7 @@
 
                 <!-- Date Input (Initially hidden) -->
                 <div class="mb-3 animate__animated" style="display: none;" id="date-container">
-                    <label for="date" class="form-label">Select Date</label>
+                    <label for="date" class="form-label" id="date-label">Select Date</label>
                     <input type="date" class="form-control" id="date" placeholder="dd/mm/yyyy" required>
                 </div>
 
@@ -110,11 +115,11 @@
                     <table class="table table-dark table-striped">
                         <thead>
                             <tr>
-                                <th>Date</th>
-                                <th>Subject</th>
-                                <th>ClassRoom</th>
-                                <th>Homework</th>
-                                <th>Reminder</th>
+                                <th id="table-date">Date</th>
+                                <th id="table-subject">Subject</th>
+                                <th id="table-classroom">ClassRoom</th>
+                                <th id="table-homework">Homework</th>
+                                <th id="table-reminder">Reminder</th>
                             </tr>
                         </thead>
                         <tbody>
