@@ -1,4 +1,4 @@
-// تهيئة Firebase App و Firestore
+/* // تهيئة Firebase App و Firestore
 var firebaseConfig = {
     apiKey: "AIzaSyDSaeLi02XG-g6AnSCKge3rDTK4psbnD1I",
     authDomain: "daily-plane.firebaseapp.com",
@@ -148,3 +148,4 @@ document.getElementById('date').addEventListener('change', async function() {
     tableContainer.style.display = 'block';
     tableContainer.classList.add('animate__fadeIn');
 });
+ */
